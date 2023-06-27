@@ -265,3 +265,32 @@ var textelement = document.getElementById("copy-right__text");
 textelement.innerText = footer_text[0]['text2'];
 var textelement = document.getElementById("copy-right__text2");
 textelement.innerText = footer_text[0]['text3'];
+
+
+// دنی جان عکسا و متن های پر تکرار رو مثل من بساز میبی نی که خیلی راحته با جان زن دایی جفتمون 
+
+const images = [
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:1},
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:2},
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:3},
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:4},
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:5},
+  {src:"../images/portfolio-1.jpg" , alt:"car-image" , key:6},
+]
+
+imageRendering(images)
+
+function imageRendering(images){
+  const mainPhotoContainer = document.getElementById("photoManagement")
+  images.map(r=>{
+    const image = document.createElement("img")
+    image.classList.add("car-photo")
+    image.src=r.src
+    image.alt=r.alt
+    image.setAttribute("key" , r.key)
+    const imageContainer= document.createElement("div")
+    imageContainer.classList.add("image-container")
+    imageContainer.appendChild(image)
+    mainPhotoContainer.appendChild(imageContainer)
+  })
+}
