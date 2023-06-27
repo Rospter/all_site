@@ -14,174 +14,254 @@ menuBtn.addEventListener("click", function () {
 
 // New...
 
-var image1 = "../images/header-img.svg";
+// header_Step
+var header_img = [
+  {
+    name: "header_img",
+    src: "../images/header-img.svg",
+  },
+  {
+    name: "Interactive_img",
+    src: "../images/Interactive-ART.png",
+  },
+];
+var header_text = [
+  {
+    name: "nav text",
+    text1: "Home",
+    text2: "about",
+    text3: "How it work",
+    text4: "Clients",
+    text5: "Portfolio",
+    text6: "Contact us",
+    text7: "See our works",
+  },
+  {
+    name: "header text",
+    text1: "Create a new generation website for your business",
+    text2:
+      " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't",
+  },
+];
+
+// Main_Step
+
+var main_img = [
+  {
+    name: "main img",
+    src: "../images/main-img.svg",
+  },
+];
+
+var main_text = [
+  {
+    name: "main text",
+    text1: "HOW IT WORK",
+    text2: "Three Simple Step To Started Working Process",
+    text3: "Research Project",
+    text4: "There are many variations of passages of Lorem Ipsum available",
+    text5: "Targeting",
+  },
+];
+
+// Comment_ Step
+
+var comment_img = [
+  {
+    name: "comment img",
+    src1: "../images/person-1.png",
+    src2: "../images/person-2.png",
+    src3: "../images/person-3.png",
+  },
+  {
+    name: "logo",
+    src1: "../images/logo-1.svg",
+    src2: "../images/logo-2.svg",
+    src3: "../images/logo-3.svg",
+    src4: "../images/logo-4.svg",
+    src5: "../images/logo-5.svg",
+  },
+];
+
+var comment_text = [
+  {
+    name: "comment text",
+    text1: "You’re in a good hand",
+    text2:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+    text3:
+      " Life before Company was very chaotic we got a lot of phone calls, a lot of mistyped orders. So with Company, the abilityto see the order directly from the customer makes it so streamlined.",
+    text4: "Martin Jones, Creative Cons",
+  },
+];
+
+
+
+
+// Portfolio_step
+
+
+
+var portfolio_img = [
+
+  {
+    name:"portfolio img",
+    src1:"../images/portfolio-1.jpg",
+    src2:"../images/portfolio-2.jpg",
+    src3:"../images/portfolio-3.jpg",
+    src4:"../images/portfolio-4.jpg",
+    src5:"../images/portfolio-5.jpg",
+    src6:"../images/portfolio-6.jpg",
+
+  },
+
+];
+
+var portfolio_text = [
+
+  {
+    name:"portfolio text",
+    text1:"PORTFOLIO",
+    text2:"Three Simple Step To Started Working Process",
+  }
+];
+
+var footer_img = [
+
+  {
+    name:"footer img",
+    src:"../images/right-arrow.svg",
+  }
+];
+
+var footer_text = [
+
+  {
+    name:"footer text",
+    text1:"Create a new generation website for your business.",
+    text2:"Copyright © 2018-2019",
+    text3:"Interactive ART Company All rights reserved",
+  }
+];
 var element1 = document.getElementById("right_image");
-element1.src = image1;
+element1.src = header_img[0]["src"];
 
 // 2
-
-var image2 = "../images/Interactive-ART.png";
 var element2 = document.getElementById("nav_logos");
-element2.src = image2;
+element2.src = header_img[1]["src"];
 
 // 3
-var image3 = "../images/main-img.svg";
 var element3 = document.getElementById("main_img");
-element3.src = image3;
+element3.src = main_img[0]["src"];
 
 // person_img
 
-var image3 = "../images/person-1.png";
 var element3 = document.getElementById("person_1");
-element3.src = image3;
-var image4 = "../images/person-2.png";
+element3.src = comment_img[0]["src1"];
 var element4 = document.getElementById("person_2");
-element4.src = image4;
-var image5 = "../images/person-3.png";
+element4.src = comment_img[0]["src2"];
 var element5 = document.getElementById("person_3");
-element5.src = image5;
+element5.src = comment_img[0]["src3"];
 
 // logo_img
 
-var image6 = "../images/logo-1.svg";
 var element6 = document.getElementById("logo_1");
-element6.src = image6;
-var image7 = "../images/logo-2.svg";
+element6.src = comment_img[1]["src1"];
 var element7 = document.getElementById("logo_2");
-element7.src = image7;
-var image8 = "../images/logo-3.svg";
+element7.src = comment_img[1]["src2"];
 var element8 = document.getElementById("logo_3");
-element8.src = image8;
-var image9 = "../images/logo-4.svg";
+element8.src = comment_img[1]["src3"];
 var element9 = document.getElementById("logo_4");
-element9.src = image9;
-var image10 = "../images/logo-5.svg";
+element9.src = comment_img[1]["src4"];
 var element10 = document.getElementById("logo_5");
-element10.src = image10;
+element10.src = comment_img[1]["src5"];
 
 // portfolio_img
 
-var image11 = "../images/portfolio-1.jpg";
+
 var element11 = document.getElementById("portfolio_1");
-element11.src = image11;
-var image12 = "../images/portfolio-2.jpg";
+element11.src = portfolio_img[0]['src1'];
 var element12 = document.getElementById("portfolio_2");
-element12.src = image12;
-var image13 = "../images/portfolio-3.jpg";
+element12.src = portfolio_img[0]['src2'];
 var element13 = document.getElementById("portfolio_3");
-element13.src = image13;
-var image14 = "../images/portfolio-4.jpg";
+element13.src = portfolio_img[0]['src3'];
 var element14 = document.getElementById("portfolio_4");
-element14.src = image14;
-var image15 = "../images/portfolio-5.jpg";
+element14.src = portfolio_img[0]['src4'];
 var element15 = document.getElementById("portfolio_5");
-element15.src = image15;
-var image16 = "../images/portfolio-6.jpg";
+element15.src = portfolio_img[0]['src5'];
 var element16 = document.getElementById("portfolio_6");
-element16.src = image16;
+element16.src = portfolio_img[0]['src6'];
 
 // footer
 
-var image17 = "../images/right-arrow.svg";
 var element17 = document.getElementById("right_arrow");
-element17.src = image17;
+element17.src = footer_img[0]['src'];
 
 // All Text
 
-var text = "Home";
-var text2 = "about";
-var text3 = "How it work";
-var text4 = "Clients";
-var text5 = "Portfolio";
 //
-var header_link_text = "Contact us";
-var header_content_title = "Create a new generation website for your business";
-var header_content_title2 =
-  " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't";
-var header_content_link = "See our works";
-var works_text = "HOW IT WORK";
-var works_title = "Three Simple Step To Started Working Process";
-var works_content_text = "Research Project";
-var works_content_text2 =
-  "There are many variations of passages of Lorem Ipsum available";
-var works_content_text1_2 = "Targeting";
-var works_content_text2_2 =
-  "There are many variations of passages of Lorem Ipsum available";
-var works_content_text1_3 = "Research Project";
-var works_content_text2_3 =
-  "There are many variations of passages of Lorem Ipsum available";
-var person_comment_title = "You’re in a good hand";
-var person_comment_text =
-  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.";
-var comment_body =
-  " Life before Company was very chaotic we got a lot of phone calls, a lot of mistyped orders. So with Company, the abilityto see the order directly from the customer makes it so streamlined.";
-var comment_person = "Martin Jones, Creative Cons";
-var portfolio_text = "PORTFOLIO";
-var portfolio_title = "Three Simple Step To Started Working Process";
-var newsletter_text = "Create a new generation website for your business.";
-var copy_right_text = "Copyright © 2018-2019";
-var copy_right_text2 = "Interactive ART Company All rights reserved";
+
 var textelement = document.getElementById("menu__link_js");
-textelement.innerText = text;
+textelement.innerText = header_text[0]["text1"];
 //
 var textelement = document.getElementById("menu__link2_js");
-textelement.innerText = text2;
+textelement.innerText = header_text[0]["text2"];
 var textelement = document.getElementById("menu__link3_js");
-textelement.innerText = text3;
+textelement.innerText = header_text[0]["text3"];
 var textelement = document.getElementById("menu__link4_js");
-textelement.innerText = text4;
+textelement.innerText = header_text[0]["text4"];
 var textelement = document.getElementById("menu__link5_js");
-textelement.innerText = text5;
+textelement.innerText = header_text[0]["text5"];
 //
 var textelement = document.getElementById("header_link_js");
-textelement.innerText = header_link_text;
+textelement.innerText = header_text[0]["text6"];
 var textelement = document.getElementById("header_content_title");
-textelement.innerText = header_content_title;
+textelement.innerText = header_text[1]["text1"];
 var textelement = document.getElementById("header_content_title2");
-textelement.innerText = header_content_title2;
+textelement.innerText = header_text[1]["text2"];
 var textelement = document.getElementById("header-content__link_js");
-textelement.innerText = header_link_text;
+textelement.innerText = header_text[0]["text6"];
 var textelement = document.getElementById("header-content__link2_js");
-textelement.innerText = header_content_link;
+textelement.innerText = header_text[0]["text7"];
 var textelement = document.getElementById("works_text");
-textelement.innerText = works_text;
+textelement.innerText = main_text[0]["text1"];
 var textelement = document.getElementById("works__title");
-textelement.innerText = works_title;
+textelement.innerText = main_text[0]["text2"];
 var textelement = document.getElementById("works-content__title");
-textelement.innerText = works_content_text;
+textelement.innerText = main_text[0]["text3"];
 var textelement = document.getElementById("works-content__text");
-textelement.innerText = works_content_text2;
+textelement.innerText = main_text[0]["text4"];
 var textelement = document.getElementById("works-content__title2");
-textelement.innerText = works_content_text1_2;
+textelement.innerText = main_text[0]["text5"];
 var textelement = document.getElementById("works-content__text2");
-textelement.innerText = works_content_text2_2;
+textelement.innerText = main_text[0]["text4"];
 var textelement = document.getElementById("works-content__title3");
-textelement.innerText = works_content_text1_3;
+textelement.innerText = main_text[0]["text3"];
 var textelement = document.getElementById("works-content__text3");
-textelement.innerText = works_content_text2_3;
+textelement.innerText = main_text[0]["text4"];
 var textelement = document.getElementById("person-comments__title");
-textelement.innerText = person_comment_title;
+textelement.innerText = comment_text[0]["text1"];
 var textelement = document.getElementById("person-comments__text");
-textelement.innerText = person_comment_text;
+textelement.innerText = comment_text[0]["text2"];
 var textelement = document.getElementById("comment__body");
-textelement.innerText = comment_body;
+textelement.innerText = comment_text[0]["text3"];
 var textelement = document.getElementById("comment__body2");
-textelement.innerText = comment_body;
+textelement.innerText = comment_text[0]["text3"];
 var textelement = document.getElementById("comment__body3");
-textelement.innerText = comment_body;
+textelement.innerText = comment_text[0]["text3"];
 var textelement = document.getElementById("comment_person");
-textelement.innerText = comment_person;
+textelement.innerText = comment_text[0]['text4'];
 var textelement = document.getElementById("comment_person2");
-textelement.innerText = comment_person;
+textelement.innerText = comment_text[0]['text4'];
 var textelement = document.getElementById("comment_person3");
-textelement.innerText = comment_person;
+textelement.innerText = comment_text[0]['text4'];
 var textelement = document.getElementById("portfolio__text");
-textelement.innerText = portfolio_text;
+textelement.innerText = portfolio_text[0]['text1'];
 var textelement = document.getElementById("portfolio__title");
-textelement.innerText = portfolio_title;
+textelement.innerText = portfolio_text[0]['text2'];
 var textelement = document.getElementById("newsletter__text");
-textelement.innerText = newsletter_text;
+textelement.innerText = footer_text[0]['text1'];
 var textelement = document.getElementById("copy-right__text");
-textelement.innerText = copy_right_text;
+textelement.innerText = footer_text[0]['text2'];
 var textelement = document.getElementById("copy-right__text2");
-textelement.innerText = copy_right_text2;
+textelement.innerText = footer_text[0]['text3'];
